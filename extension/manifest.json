@@ -12,5 +12,15 @@
   "browser_action": {
     "default_title": "Copy code"
   },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "file://*/*"],
+      // "css": ["mystyles.css"],
+      "js": [
+        "libs/jquery-2.1.4.min.js", 
+        "libs/jquery.hotkeys.js",
+        "content.js"]
+    }
+  ],
   "manifest_version": 2
 }
