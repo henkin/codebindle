@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://nodejs.org/en/about/ -->
+<html lang="en" class="wf-sourcesanspro-n4-active wf-sourcesanspro-n6-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>About | Node.js</title>
+
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="http://fonts.gstatic.com/">
+    <link rel="dns-prefetch" href="http://www.google-analytics.com/">
+
+    <meta name="author" content="Node.js Foundation">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" href="https://nodejs.org/static/apple-touch-icon.png">
+    <link rel="icon" href="https://nodejs.org/static/favicon.ico">
+
+    <link rel="canonical" href="./About _ Node.js_files/About _ Node.js.html">
+        <link rel="alternate" href="https://nodejs.org/en/feed/blog.xml" title="Node.js Blog" type="application/rss+xml">
+        <link rel="alternate" href="https://nodejs.org/en/feed/releases.xml" title="Node.js Blog: Releases" type="application/rss+xml">
+        <link rel="alternate" href="https://nodejs.org/en/feed/vulnerability.xml" title="Node.js Blog: Vulnerability Reports" type="application/rss+xml">
+        <link rel="alternate" href="https://nodejs.org/en/feed/tsc-minutes.xml" title="Node.js TSC meeting minutes" type="application/rss+xml">
+    <link rel="stylesheet" href="./About _ Node.js_files/styles.css" media="all">
+    
+    <link rel="stylesheet" href="./About _ Node.js_files/css" media="all">
+    
+    <style>.container > .infoBoxList > .shareInfoBox
+{display:none !important;}</style>
+
+   <script type="text/javascript" src="../extension/libs/jquery-2.1.4.min.js"></script>
+   <script type="text/javascript" src="../extension/libs/jquery.hotkeys.js"></script>
+   <script type="text/javascript" src="../extension/content.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+    
+            <a href="https://nodejs.org/en" id="logo">
+              <img src="./About _ Node.js_files/logo.svg" height="75" width="180" alt="node.js">
+            </a>
+            <nav>
+                <ul class="list-divider-pipe">
+                    <li>
+                        <a href="https://nodejs.org/en/">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="./About _ Node.js_files/About _ Node.js.html">About</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/download/">Downloads</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/docs/">Docs</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/foundation/">Foundation</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/get-involved/">Get Involved</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/security/">Security</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/blog/">News</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="container has-side-nav">
+
+            <aside>
+                <ul>
+                    <li class="active">
+                        <a href="./About _ Node.js_files/About _ Node.js.html">About</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/about/governance/">Governance</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/about/working-groups/">Working Groups</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/about/releases/">Releases</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/about/resources/">Resources</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/foundation/">Foundation</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/security/">Security</a>
+                    </li>
+                    <li>
+                        <a href="https://nodejs.org/en/about/trademark/">Trademark</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <article>
+                <h1>About Node.js®<a name="about-node-js-reg" class="anchor" href="https://nodejs.org/en/about/#about-node-js-reg"></a></h1><p>As an asynchronous event driven framework, Node.js is designed to build
+scalable network applications. In the following "hello world" example, many
+connections can be handled concurrently. Upon each connection the callback is
+fired, but if there is no work to be done Node is sleeping.</p>
+<pre><code class="language-javascript"><span class="token keyword">var</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'text/plain'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'Hello World\n'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">1337</span><span class="token punctuation">,</span> <span class="token string">"127.0.0.1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Server running at http://127.0.0.1:1337/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>This is in contrast to today's more common concurrency model where OS threads
+are employed. Thread-based networking is relatively inefficient and very
+difficult to use. Furthermore, users of Node are free from worries of
+dead-locking the process—there are no locks. Almost no function in Node
+directly performs I/O, so the process never blocks. Because nothing blocks,
+less-than-expert programmers are able to develop scalable systems.</p>
+<p>Node is similar in design to and influenced by systems like Ruby's <a href="http://rubyeventmachine.com/">Event
+Machine</a> or Python's
+<a href="http://twistedmatrix.com/">Twisted</a>. Node takes the event model a bit further,
+it presents the event loop as a language construct instead of as a library. In
+other systems there is always a blocking call to start the event-loop.
+Typically one defines behavior through callbacks at the beginning of a script
+and at the end starts a server through a blocking call like
+<code>EventMachine::run()</code>. In Node there is no such start-the-event-loop call. Node
+simply enters the event loop after executing the input script. Node exits the
+event loop when there are no more callbacks to perform. This behavior is like
+browser JavaScript -— the event loop is hidden from the user.</p>
+<p>HTTP is a first class citizen in Node, designed with streaming and low latency
+in mind. This makes Node well suited for the foundation of a web library or
+framework.</p>
+<p>Just because Node is designed without threads, doesn't mean you cannot take
+advantage of multiple cores in your environment. You can spawn child processes
+that are easy to communicate with by using our
+<a href="https://nodejs.org/api/child_process.html#child_process.fork">child_process.fork()</a>
+API. Built upon that same interface is the
+<a href="https://nodejs.org/api/cluster.html">cluster</a> module, which allows you to share
+sockets between processes to enable load balancing over your cores.</p>
+
+            </article>
+
+        </div>
+    </div>
+
+    <a href="https://nodejs.org/en/about/#" id="scrollToTop" style="display: none;">↑ <span>Scroll to top</span></a>
+    
+    <footer role="contentinfo">
+    
+        <div class="linuxfoundation-footer">
+            <div class="container">
+                <div class="issue-link-container">
+                    <ul class="list-divider-pipe issue-link">
+                        <li><a href="https://github.com/nodejs/node/issues">Report Node.js issue</a></li>
+                        <li><a href="https://github.com/nodejs/new.nodejs.org/issues">Report website issue</a></li>
+                    </ul>
+                    <a class="linuxfoundation-logo" href="http://collabprojects.linuxfoundation.org/">Linux Foundation Collaborative Projects</a>
+                </div>
+    
+                <p>© 2015 Node.js Foundation. All Rights Reserved. Portions of this site originally © 2015 Joyent. </p>
+                <p>Node.js is a trademark of Joyent, Inc. and is used with its permission. Please review the Trademark Guidelines of the Node.js Foundation <a href="https://nodejs.org/static/documents/trademark-policy.pdf">here</a>.</p>
+                <p>Linux Foundation is a registered trademark of The Linux Foundation.</p>
+                <p>Linux is a registered <a href="http://www.linuxfoundation.org/programs/legal/trademark" title="Linux Mark Institute">trademark</a> of Linus Torvalds.</p>
+                <p>
+                   <a href="https://raw.githubusercontent.com/nodejs/node/master/LICENSE">Node.js Project Licensing Information</a>.
+                </p>
+            </div>
+        </div>
+    
+    </footer>
+    
+    <link rel="stylesheet" href="./About _ Node.js_files/prism-tomorrow.css" media="all">
+    <script src="./About _ Node.js_files/webfont.js" async="" defer=""></script>
+    <script type="text/javascript">
+        var $scrollToTop = document.getElementById('scrollToTop');
+        (window.onscroll = function() {
+            $scrollToTop.style.display = (window.pageYOffset > window.innerHeight) ? 'block' : 'none';
+        })();
+        $scrollToTop.onclick = function() {
+            window.scrollTo(0, 0);
+            return false;
+        };
+    </script>
+    
+    <script>
+    (function(d,e,m,s){
+        if (!/(MSIE|Trident)/.test(navigator.userAgent)){return;}
+        m=d.createElement(e);
+        s=d.getElementsByTagName(e)[0];m.async=1;m.src='/static/js/modernizr.custom.js';
+        m.onload=function(){Modernizr.addTest('flexboxtweener', Modernizr.testAllProps('flexAlign'));};
+        s.parentNode.insertBefore(m,s);
+    })(document,'script');
+    </script>
+    
+
+
+</body></html>
