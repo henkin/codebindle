@@ -1,21 +1,15 @@
 {
   "name": "CodeBindle",
-  "description": "A Chrome Extension for grabbing code snippets from a web page using the keyboard",
-  "version": "0.1",
+  "description": "Highlight code snippets using the keyboard ('Ctrl-]' and 'Ctrl-[')",
+  "author": "Pavel Henkin",
+  "version": "0.2",
+  "icons": { "128": "logo.png" },
   "permissions": [
     "activeTab"
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-  "browser_action": {
-    "default_title": "Copy code"
-  },
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*", "file://*/*"],
-      // "css": ["mystyles.css"],
       "js": [
         "libs/jquery-2.1.4.min.js", 
         "libs/jquery.hotkeys.js",
